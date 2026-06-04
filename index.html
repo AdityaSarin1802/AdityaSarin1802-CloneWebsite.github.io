@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">amazon</div>
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Products">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+        <div class="nav-links">
+            <span>Account</span>
+            <span>Orders</span>
+            <span>Cart (<span id="cartCount">0</span>)</span>
+        </div>
+    </div>
+    <div class="menu">
+        <a href="#">All</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Mobiles</a>
+        <a href="#">Fashion</a>
+        <a href="#">Electronics</a>
+    </div>
+    <div class="hero">
+        <h1>Welcome to Amazon Clone</h1>
+    </div>
+    <div class="products">
+        <div class="card">
+            <img src="https://via.placeholder.com/250x200">
+            <h3>Smart Phone</h3>
+            <p>₹19,999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/250x200">
+            <h3>Headphones</h3>
+            <p>₹2,499</p>
+            <button onclick="addToCart()">Add To Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/250x200">
+            <h3>Laptop</h3>
+            <p>₹54,999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/250x200">
+            <h3>Watch</h3>
+            <p>₹1,999</p>
+            <button onclick="addToCart()">Add To Cart</button>
+        </div>
+    </div>
+    <footer>Amazon Clone Project © 2026</footer>
+    <script src="script.js"></script>
+</body>
+</html>

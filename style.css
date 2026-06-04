@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+body{
+    background:#eaeded;
+}
+.navbar{
+    background:#131921;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+}
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+.search-box{
+    width:40%;
+    display:flex;
+}
+.search-box input{
+    width:100%;
+    padding:10px;
+    border:none;
+}
+.search-box button{
+    padding:10px 15px;
+    background:#febd69;
+    border:none;
+    cursor:pointer;
+}
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+.menu{
+    background:#232f3e;
+    padding:10px;
+}
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
+}
+.hero{
+    height:300px;
+    background:#d5dbdb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.hero h1{
+    color:#131921;
+}
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:30px;
+}
+.card{
+    background:white;
+    padding:15px;
+    text-align:center;
+    border-radius:5px;
+}
+.card img{
+    width:100%;
+}
+.card h3{
+    margin-top:10px;
+}
+.card p{
+    margin:10px 0;
+}
+.card button{
+    width:100%;
+    padding:10px;
+    background:#ffd814;
+    border:none;
+    cursor:pointer;
+}
+footer{
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .search-box{
+        width:100%;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        align-items:center;
+    }
+}
