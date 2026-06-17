@@ -7,58 +7,118 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">amazon</div>
-        <div class="search-box">
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="Search Products">
-            <button onclick="searchProducts()">Search</button>
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="logo">
+                amazon<span>.in</span>
+            </div>
+
+            <div class="location">
+                Deliver to India
+            </div>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search Amazon">
+                <button onclick="searchProducts()">🔍</button>
+            </div>
+
+            <div class="nav-links">
+                <span>Account</span>
+                <span>Orders</span>
+                <span>Cart (<span id="cartCount">0</span>)</span>
+            </div>
+
         </div>
-        <div class="nav-links">
-            <span>Account</span>
-            <span>Orders</span>
-            <span>Cart (<span id="cartCount">0</span>)</span>
+
+        <div class="menu">
+            <a href="#">All</a>
+            <a href="#">Today's Deals</a>
+            <a href="#">Mobiles</a>
+            <a href="#">Fashion</a>
+            <a href="#">Electronics</a>
+            <a href="#">Home</a>
+            <a href="#">Books</a>
         </div>
-    </div>
-    <div class="menu">
-        <a href="#">All</a>
-        <a href="#">Today's Deals</a>
-        <a href="#">Mobiles</a>
-        <a href="#">Fashion</a>
-        <a href="#">Electronics</a>
-    </div>
+
+    </header>
+
     <div class="hero">
-        <h1>Welcome to Amazon Clone</h1>
-    </div>
-    <div class="products">
-        <div class="card">
-            <img src="https://via.placeholder.com/250x200">
-            <h3>Smart Phone</h3>
-            <p>₹19,999</p>
-            <button onclick="addToCart()">Add To Cart</button>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/250x200">
-            <h3>Headphones</h3>
-            <p>₹2,499</p>
-            <button onclick="addToCart()">Add To Cart</button>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/250x200">
-            <h3>Laptop</h3>
-            <p>₹54,999</p>
-            <button onclick="addToCart()">Add To Cart</button>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/250x200">
-            <h3>Watch</h3>
-            <p>₹1,999</p>
-            <button onclick="addToCart()">Add To Cart</button>
+        <div class="hero-message">
+            Welcome to Amazon Clone - Shop Electronics, Fashion and More
         </div>
     </div>
-    <footer>Amazon Clone Project © 2026</footer>
+
+    <div class="shop-section">
+
+        <div class="box card">
+            <h2>Electronics</h2>
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+            <button onclick="addToCart()">Shop Now</button>
+        </div>
+
+        <div class="box card">
+            <h2>Fashion</h2>
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+            <button onclick="addToCart()">Shop Now</button>
+        </div>
+
+        <div class="box card">
+            <h2>Gaming</h2>
+            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8">
+            <button onclick="addToCart()">Shop Now</button>
+        </div>
+
+        <div class="box card">
+            <h2>Home Decor</h2>
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+            <button onclick="addToCart()">Shop Now</button>
+        </div>
+
+        <div class="box card">
+            <h2>Smart Phone</h2>
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+            <button onclick="addToCart()">Add To Cart</button>
+        </div>
+
+        <div class="box card">
+            <h2>Headphones</h2>
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+            <button onclick="addToCart()">Add To Cart</button>
+        </div>
+
+        <div class="box card">
+            <h2>Laptop</h2>
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853">
+            <button onclick="addToCart()">Add To Cart</button>
+        </div>
+
+        <div class="box card">
+            <h2>Watch</h2>
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+            <button onclick="addToCart()">Add To Cart</button>
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="footer-top">
+            Back To Top
+        </div>
+
+        <div class="footer-bottom">
+            Amazon Clone Project © 2026
+        </div>
+
+    </footer>
+
     <script src="script.js"></script>
+
 </body>
 </html>
